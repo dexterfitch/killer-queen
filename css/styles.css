@@ -1,7 +1,15 @@
 #result, #error {
-  display:none;
+  display: none;
+  margin-top: 1em;
+  font-size: 24px;
+  color: #FF5B1A;
 }
 
 .entry {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.input-box {
   display: block;
 }
