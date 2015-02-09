@@ -35,5 +35,12 @@ describe('queenAttack', function() {
     expect(queenAttack([3, 4], [8, 9])).to.equal(false);
   });
 
+  it("is false if any specified coordinate is NaN", function() {
+    expect(queenAttack([ , 4], [8, 4])).to.equal(false);
+  });
+
+  it("is false if the specified coordinates are the same for each position", function() {
+    expect(queenAttack([8, 8], [8, 8])).to.equal(false);
+  });
 
 });

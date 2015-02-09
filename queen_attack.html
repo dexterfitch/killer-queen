@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Killer Queen</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Queen Attack</h1>
+
+      <form id="queen-attack">
+        <div class="form-group">
+
+          <div class="entry">
+            <label for="queen-position-x">Enter the Queen's X position:</label>
+            <input id="queen-position-x" type="text">
+          </div>
+
+          <div class="entry">
+            <label for="queen-position-y">Enter the Queen's Y position:</label>
+            <input id="queen-position-y" type="text">
+          </div>
+
+          <div class="entry">
+            <label for="attack-position-x">Enter the Attacking X position:</label>
+            <input id="attack-position-x" type="text">
+          </div>
+
+          <div class="entry">
+            <label for="attack-position-y">Enter the Attacking Y position:</label>
+            <input id="attack-position-y" type="text">
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Attack?</button>
+      </form>
+
+      <div id="result">
+        <p>Queen [<span class="queen-coordinates"></span>] can <span class="not"></span> attack Position [<span class="attack-coordinates"></span>]</p>
+      </div>
+
+      <div id="error">
+        <p>Enter valid inputs (numbers 1-8 only)!</p>
+      </div>
+    </div>
+  </body>
+</html>
